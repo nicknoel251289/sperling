@@ -34,7 +34,11 @@ document.onreadystatechange = function () {
       });
 
       window.addEventListener('resize', function(){
-        if(window.innerWidth > 950){
+        if(window.innerWidth >= 1){
+          sectOne.style.width = '100%';
+        }
+
+        if(window.innerWidth >= 990){
           navTop.style.width = "auto";
           if(hamburger.classList.contains('active')){   //if hamburg menu has been clicked and shows an X
             hamburger.classList.toggle('active');       //when resizing less than 950 it will still be toggled open and show
@@ -52,10 +56,6 @@ document.onreadystatechange = function () {
             main.style.marginRight = "300px";
             main.style.transitionDuration = ".5s";
           }
-        }
-
-        if(hamburger.classList.contains('active') && window.innerWidth >= 1){
-          sectOne.style.width = '100vw';
         }
       });
 
