@@ -38,7 +38,7 @@ document.onreadystatechange = function () {
           sectOne.style.width = '100%';
         }
 
-        if(window.innerWidth >= 990){
+        if(window.innerWidth >= 1115){
           navTop.style.width = "auto";
           if(hamburger.classList.contains('active')){   //if hamburg menu has been clicked and shows an X
             hamburger.classList.toggle('active');       //when resizing less than 950 it will still be toggled open and show
