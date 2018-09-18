@@ -6,6 +6,7 @@ document.onreadystatechange = function () {
       var hamburgLine = document.getElementById('line');
       var navTop = document.getElementById('top-nav');
       var main = document.getElementById('main');
+      var sectOne = document.getElementById('section-1');
 
       function openTopNav(){
         if(window.innerWidth > 736){
@@ -51,6 +52,10 @@ document.onreadystatechange = function () {
             main.style.marginRight = "300px";
             main.style.transitionDuration = ".5s";
           }
+        }
+
+        if(hamburger.classList.contains('active') && window.innerWidth >= 1){
+          sectOne.style.width = '100vw';
         }
       });
 
