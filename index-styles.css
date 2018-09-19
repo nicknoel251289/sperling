@@ -24,7 +24,7 @@ h4 {
   font-size: 2.4rem;
 }
 p {
-  line-height: 1.4em; 
+  line-height: 1.4em;
 }
 /* MAIN START */
 main {
@@ -45,6 +45,8 @@ main {
 .logo {
   display: inline-block;
   padding: 5px 0 5px 25px;
+  position: relative;
+  top: 8px;
 }
 .logo img {
   width: 200px;
@@ -140,7 +142,7 @@ main {
 .content-container-width-1080 {
   max-width: 1080px;
   min-width: 300px;
-  padding: 0 1em;
+  padding: 0 2em;
   margin: auto;
   justify-content: center;
 }
@@ -169,7 +171,7 @@ main {
   display: inline-flex;
 }
 .get-started-button a {
-  width: 150px;
+  width: 180px;
   padding: .5em 0;
   color: #dddddd;
   text-decoration: none;
@@ -191,7 +193,7 @@ main {
   display: inline-flex;
 }
 .why-us-button a {
-  width: 150px;
+  width: 180px;
   padding: .5em 0;
   color: #404d59;
   text-decoration: none;
@@ -265,7 +267,7 @@ main {
   width: -webkit-fill-available;
 }
 .learn-more-button a {
-  width: 150px;
+  width: 180px;
   padding: .5em 0;
   color: #404d59;
   text-decoration: none;
@@ -315,7 +317,7 @@ main {
   width: -webkit-fill-available;
 }
 .view-more-button a {
-  width: 150px;
+  width: 180px;
   padding: .5em 0;
   color: #404d59;
   text-decoration: none;
