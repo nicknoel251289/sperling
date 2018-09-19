@@ -2,13 +2,26 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+html {
+  font-size: 16px;
 }
 h1, h2, h3 {
   font-family: 'impact', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.5rem'
+}
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2.4rem;
 }
 /* MAIN START */
 main {
@@ -59,14 +72,16 @@ main {
   text-decoration: none;
   color: #404d59;
   padding: 1.8em 2.5em;
-  font-weight: lighter;
+  font-size: 14px;
+  font-weight: 300;
 }
 #hamburger {
   height: 75.59px;
   width: 75.59px;
   position: fixed;
-  right: 0;
+  left: 0;
   top: 0;
+  margin-left: calc(100vw - 90px);
   cursor: pointer;
   z-index: 100;
 }
@@ -110,25 +125,184 @@ main {
   top: 0;
 }
 
+
+
+/***** SECTION 1 *****/
 #section-1 {
   background: 50% 50% / cover;
   /*background-image: url('pictures/section-1-bg.jpg'); */
   min-height: calc(100vh - 74px);
 }
-.content-container-width-960 {
-  display: grid;
-  grid-template-columns: 2em 1fr 2em;
-  grid-template-rows: auto;
+.content-container-width-1080 {
   max-width: 1080px;
+  min-width: 300px;
+  padding: 0 1em;
+  margin: auto;
+  justify-content: center;
+:}
+/***** LEFT SECTION *****/
+.left-info-section-1 {
+  justify-self: center;
+  padding-top: 3em;
+}
+.left-info-section-1 h1 {
+  grid-column: 2/3;
+  color: #dddddd;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+}
+.left-info-section-1 p {
+  color: #dddddd;
+  font-size: 24px;
+  padding: .5em 0;
+  font-weight: 300;
+}
+.new-team {
+  color: #02d1bc;
+  font-weight: 600;
+}
+/***** Left section buttons *****/
+.get-started-button {
+  padding: .5em .5em .5em 0;
+  display: inline-flex;
+}
+.get-started-button a {
+  width: 150px;
+  padding: .5em 0;
+  color: #dddddd;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid #dddddd;
+  text-align: center;
+  font-weight: 400;
+}
+.get-started-button {
+  padding: .5em .5em .5em 0;
+  display: inline-flex;
+}
+.get-started-button a:hover {
+  background: #dddddd;
+  color: #404d59;
+  border: 1px solid #dddddd;
+}
+.why-us-button {
+  display: inline-flex;
+}
+.why-us-button a {
+  width: 150px;
+  padding: .5em 0;
+  color: #404d59;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid #02d1bc;
+  background: #02d1bc;
+  text-align: center;
+  font-weight: 400;
+}
+.why-us-button a:hover {
+  background: #dddddd;
+  color: #404d59;
+  border: 1px solid #dddddd;
+}
+/***** RIGHT SECTION *****/
+.right-info-section-1 {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+.workshop-container {
+  max-width: 390px;
+  background: #dddddd;
+  min-height: 400px;
+  border-radius: 4px;
+  border: 1px solid #dddddd;
+}
+.workshop-inner-container {
+  padding: 20px;
+}
+#date-container {
+  padding: .5em;
+  background: #25292f;
+  width: auto;
+  text-align: center;
+  color: #dddddd;
+  border: 1px solid #ffffff;
+  border-radius: 4px 4px 0 0;
+}
+#day {
+  font-family: "Roboto", sans-serif;
+  font-size: 72px;
+  font-weight: 600;
+}
+#month {
+  font-size: 32px;
+  font-weight: 100;
+}
+.workshop-container h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #404d59;
+  font-size: 20px;
+}
+.time {
+  color: #02d1bc;
+  font-weight: 400;
+  padding: .5em 0;
+  font-size: 14px;
+}
+.workshop-info {
+  font-size: 20px;
+  color: #404d59;
+}
+/***** right section buttons *****/
+.learn-more-button {
+  display: inline-flex;
+  padding: .5em;
+  text-align: center;
+  margin: auto;
+  width: -webkit-fill-available;
+}
+.learn-more-button a {
+  width: 150px;
+  padding: .5em 0;
+  color: #404d59;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid #02d1bc;
+  background: #02d1bc;
+  text-align: center;
+  font-weight: 400;
   margin: auto;
 }
-.h1-section-1 {
-  grid-column: 2/3;
+.learn-more-button a:hover {
+  background: #dddddd;
+  color: #404d59;
+  border: 1px solid #dddddd;
 }
+
 
 #section-2 {
   height: 100vh;
 }
+
+@media only screen and (min-width: 359px){
+
+}
+
+@media only screen and (min-width: 850px){
+
+  .content-container-width-1080 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .left-info-section-1 {
+    justify-content: flex-start;
+  }
+  .right-info-section-1 {
+    justify-content: flex-end;
+  }
+
+}
+
 /* FOR NAVIGATION BAR */
 @media only screen and (min-width: 1115px){
   main {
@@ -159,7 +333,7 @@ main {
   }
   #top-nav ul li {
     list-style: none;
-    padding: 2.1em 0em;
+    padding: 1.8em 0em;
     position: static;
   }
   #top-nav ul li:hover {
