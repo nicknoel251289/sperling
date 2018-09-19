@@ -215,9 +215,9 @@ main {
 }
 .workshop-container {
   max-width: 360px;
-  background: #dddddd;
+  background: #ffffff;
   min-height: 380px;
-  border-radius: 4px;
+  border-radius: 6px;
   border: 1px solid #dddddd;
 }
 .workshop-inner-container {
@@ -293,8 +293,8 @@ main {
 }
 .sperling-info-container {
   max-width: 550px;
-  background: #dddddd;
-  border-radius: 4px;
+  background: #ffffff;
+  border-radius: 6px;
   padding: 30px;
 }
 .sperling-info-container h1 {
@@ -333,10 +333,29 @@ main {
   color: #404d59;
   border: 1px solid #dddddd;
 }
+          /**** section 2 right content ******/
+.section-2-right-content {
+  padding-top: 3em;
+}
+.section-2-picture-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+}
+.image-container {
+  overflow: hidden;
+  margin: auto;
+}
+.image-container img {
+  min-width: 300px;
+  margin: auto;
+  border-radius: 6px;
+  background: 50% 50% / cover;
+}
 
 @media only screen and (min-width: 640px){
 
-  .left-info-section-1 h1 {
+  .section-1-left-content h1 {
     grid-column: 2/3;
     color: #dddddd;
     font-size: 4.5rem;
