@@ -31,7 +31,7 @@ main {
   transition: margin-right 0.5s ease;
 }
 .outside-container {
-  width: 100vw;
+  width: 100%;
   background: #dddddd;
 }
 .container {
@@ -141,11 +141,9 @@ main {
 }
 .content-container-width-1080 {
   max-width: 1080px;
-  min-width: 300px;
   padding: 0 2em;
   margin: auto;
   justify-content: center;
-  overflow-x: hidden;
 }
           /***** SECTION 1 LEFT CONTENT *****/
 .section-1-left-content {
@@ -346,17 +344,18 @@ main {
 }
 .image-container {
   overflow: hidden;
-  margin: auto;
 }
 .image-container img {
-  min-width: 300px;
+  width: 100%;
   margin: auto;
   border-radius: 6px;
   background: 50% 50% / cover;
+  position: relative;
+  bottom: -100px
 }
 .reveal {
   opacity: 0;
-  transition: 2s;
+  transition: 1s;
 }
 
 @media only screen and (min-width: 640px){

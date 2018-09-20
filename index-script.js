@@ -89,6 +89,7 @@ document.onreadystatechange = function () {
           for(var i = 0; i < reveal.length; i++){
             if(reveal[i].offsetTop + 75.59 < bottomPosition){
               reveal[i].style.opacity = "1";
+              reveal[i].style.bottom = "0";
               reveal.splice(i, 1);
             }
           }
