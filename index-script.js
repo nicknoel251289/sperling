@@ -60,7 +60,7 @@ document.onreadystatechange = function () {
       });
 
 
-      window.addEventListener('scroll', function(){
+      /*window.addEventListener('scroll', function(){
         var reveal = document.getElementsByClassName('reveal');
         var topPosition = window.pageYOffset;
         var bottomPosition = window.innerHeight + topPosition;
@@ -71,7 +71,40 @@ document.onreadystatechange = function () {
               a.style.opacity = "1";
             }
           }
-        });
+        });*/
+
+        /*var reveal = document.getElementsByClassName('reveal'); THIS RETURNS A NODE LIST
+        console.log(reveal);
+        console.log(reveal.splice(0, 1)); THIS DOES NOT WORK ON NODE LISTS */
+
+
+        var reveal = [].slice.call(document.querySelectorAll(".reveal"));
+
+        var scrollReveal = function(){
+
+          var topPosition = window.pageYOffset;
+          var bottomPosition = window.innerHeight + topPosition;
+
+          // Checks to see if elements with the class reveal are in view
+          for(var i = 0; i < reveal.length; i++){
+            if(reveal[i].offsetTop + 75.59 < bottomPosition){
+              reveal[i].style.opacity = "1";
+              reveal.splice(i, 1);
+            }
+          }
+
+          // Keeps the function running as long as the length of reveal is greater than 0
+          if(reveal.length != 0){
+            requestAnimationFrame(scrollReveal);
+          }
+
+        }
+
+        requestAnimationFrame(scrollReveal);
+
+
+
+
 
 
 
