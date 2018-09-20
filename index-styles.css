@@ -60,6 +60,7 @@ main {
   right: 0px;
   overflow-x: hidden;
   transition: .5s;
+  z-index: 100;
 }
 #top-nav ul li {
   list-style: none;
@@ -89,7 +90,7 @@ main {
   top: 0;
   margin-left: calc(100vw - 90px);
   cursor: pointer;
-  z-index: 100;
+  z-index: 200;
 }
 #line {
   height: 4px;
@@ -351,7 +352,7 @@ main {
   border-radius: 6px;
   background: 50% 50% / cover;
   position: relative;
-  bottom: -100px
+  bottom: -100px;
 }
 .reveal {
   opacity: 0;
