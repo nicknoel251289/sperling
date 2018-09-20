@@ -59,5 +59,21 @@ document.onreadystatechange = function () {
         }
       });
 
+
+      window.addEventListener('scroll', function(){
+        var reveal = document.getElementsByClassName('reveal');
+        var topPosition = window.pageYOffset;
+        var bottomPosition = window.innerHeight + topPosition;
+
+        for(var i = 0; i < reveal.length; i++){
+            var a = reveal[i];
+            if(a.offsetTop + 75.59 < bottomPosition){
+              a.style.opacity = "1";
+            }
+          }
+        });
+
+
+
     }
 }

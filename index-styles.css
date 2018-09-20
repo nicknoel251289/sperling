@@ -145,6 +145,7 @@ main {
   padding: 0 2em;
   margin: auto;
   justify-content: center;
+  overflow-x: hidden;
 }
           /***** SECTION 1 LEFT CONTENT *****/
 .section-1-left-content {
@@ -287,6 +288,7 @@ main {
           /***** SECTION 2 *****/
 #section-2 {
   background: 50% 50% / cover;
+  background-image: url('pictures/section-2-bg.jpg');
 }
 .section-2-left-content {
   padding-top: 3em;
@@ -351,6 +353,10 @@ main {
   margin: auto;
   border-radius: 6px;
   background: 50% 50% / cover;
+}
+.reveal {
+  opacity: 0;
+  transition: 2s;
 }
 
 @media only screen and (min-width: 640px){
