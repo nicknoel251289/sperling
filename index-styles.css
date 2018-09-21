@@ -1,4 +1,8 @@
 
+@font-face {
+  font-family: 'Impact';
+  src: url('fonts/impact.ttf'); /* IE9 Compat Modes */
+}
 * {
   padding: 0;
   margin: 0;
@@ -8,10 +12,8 @@
 html {
   font-size: 16px;
 }
-body {
-  font-family: "Impact", sans-serif;
-}
 h1, h2, h3 {
+  font-family: 'Anton', sans-serif;
   font-family: 'impact', sans-serif;
 }
 h1 {
