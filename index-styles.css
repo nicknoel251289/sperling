@@ -368,48 +368,62 @@ main {
   background: #dddddd;
 }
 .specializations-container {
-  padding: 3em 0;
+  padding: 6em 0;
+  display: grid;
+  grid-row-gap: 9em;
+  overflow: hidden;
+  margin: auto;
 }
 .specialization {
   width: -webkit-fill-available;
-  min-height: 296px;
   text-align: center;
+  transform: rotate(45deg);
+  margin: auto;
+}
+.specialization p, .specialization i {
+  font-size: 1.5em;
 }
 .color-container {
   background: #02ccb1;
   opacity: .9;
-  min-height: 296px;
+  min-height: 209px;
+  min-width: 209px;
+  display: grid;
+  place-items: center;
+  margin: auto;
 }
-.rotate {
-  transform: rotate(45deg);
-}
-.rotate-back {
-  line-height: 2em;
-  font-size: 2em;
+.recenter-text {
+  transform: rotate(-45deg);
 }
 .branding-specialization {
   background: 50% 50% / cover;
   background-image: url('pictures/branding.jpg');
+  width: 209px;
 }
 .photography-specialization {
   background: 50% 50% / cover;
   background-image: url('pictures/photography.jpeg');
+  width: 209px;
 }
 .printing-specialization {
   background: 50% 50% / cover;
   background-image: url('pictures/print.jpg');
+  width: 209px;
 }
 .seo-specialization {
   background: 50% 50% / cover;
   background-image: url('pictures/seo.jpeg');
+  width: 209px;
 }
 .social-networking-specialization {
   background: 50% 50% / cover;
   background-image: url('pictures/social.jpeg');
+  width: 209px;
 }
 .web-specialization {
   background: 50% 50% / cover;
   background-image: url('pictures/web.jpeg');
+  width: 209px;
 }
 
 @media only screen and (min-width: 640px){
