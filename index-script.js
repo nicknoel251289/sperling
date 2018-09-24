@@ -1,3 +1,15 @@
+$("document").ready(function(){
+  $('.quotes').slick({
+      dots: false,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      speed: 800,
+      slidesToShow: 1,
+      arrows: false
+    });
+})
+
 document.onreadystatechange = function () {
     if (document.readyState == "interactive") {
 
@@ -103,10 +115,30 @@ document.onreadystatechange = function () {
 
         requestAnimationFrame(scrollReveal);
 
+        //CAROUSEL
+        var click = document.getElementById('click');
+        var slide = document.getElementById('slide');
+        var reviewArray = ['MAXX', 'NICK', 'KATE', 'CUPCAKE', 'CHEWY', "DONE"];
+        var f = ["red", 'orange', 'yellow', 'green', 'teal', "magenta"];
+        var a = 0;
+        var i = 0;
 
 
+        var changeReviewSlide = function() {
+          slide.innerHTML = reviewArray[a];
+          slide.style.background = f[i];
+          i++;
+          reviewArray.push(reviewArray[a]);
+          console.log(a);
+          reviewArray.splice(a, 1);
+          if(i >= 6){
+            i = 0;
+          }
+        }
 
-
+        click.addEventListener('click', function(){
+          setInterval(changeReviewSlide, 1000);
+        })
 
 
     }

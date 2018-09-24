@@ -148,14 +148,12 @@ main {
 }
 .content-container-width-1080 {
   max-width: 1080px;
-  padding: 0 2em;
+  padding: 3em 2em;
   margin: auto;
   justify-content: center;
 }
-          /***** SECTION 1 LEFT CONTENT *****/
-.section-1-left-content {
-  padding-top: 3em;
-}
+
+/***** section 1 left content *****/
 .headline-container h1 {
   color: #dddddd;
   font-size: 3.5rem;
@@ -171,7 +169,8 @@ main {
   color: #02ccb1;
   font-weight: 600;
 }
-          /***** section 1 Left content buttons *****/
+
+/***** section 1 Left content buttons *****/
 .get-started-button {
   padding: .5em .5em .5em 0;
   display: inline-flex;
@@ -214,7 +213,8 @@ main {
   color: #404d59;
   border: 1px solid #dddddd;
 }
-          /***** SECTION 1 RIGHT CONTENT *****/
+
+/***** section 1 right content *****/
 .section-1-right-content {
   padding-top: 3em;
   padding-bottom: 3em;
@@ -267,7 +267,8 @@ main {
   font-weight: 400;
   color: #404d59;
 }
-          /***** section 1 right content buttons *****/
+
+/***** section 1 right content buttons *****/
 .learn-more-button {
   display: inline-flex;
   padding: 2em 0 1em 0;
@@ -297,9 +298,6 @@ main {
 #section-2 {
   background: 50% 50% / cover;
   background-image: url('pictures/section-2-bg.jpg');
-}
-.section-2-left-content {
-  padding-top: 3em;
 }
 .sperling-info-container {
   max-width: 550px;
@@ -341,7 +339,8 @@ main {
   color: #404d59;
   border: 1px solid #dddddd;
 }
-          /**** section 2 right content ******/
+
+/**** section 2 right content ******/
 .section-2-right-content {
   padding: 3em 0;
 }
@@ -371,9 +370,6 @@ main {
   background: #dddddd;
   /*background-image: url('pictures/section-3-bg.jpg');*/
 }
-.section-3-right-content {
-  padding-top: 3em;
-}
 .what-we-do-container {
 
 }
@@ -391,6 +387,7 @@ main {
 .what-we-do-container .view-more-button {
   display: none;
 }
+
 /* section 3 left content */
 .section-3-left-content {
   padding-top: 6em;
@@ -455,12 +452,10 @@ main {
   width: 209px;
 }
 
+          /***** SECTION 4 *****/
 #section-4 {
   background: 50% 50% / cover;
   background-image: url('pictures/section-2-bg.jpg');
-}
-.section-4-content-container {
-  padding: 3em 0;
 }
 .section-4-content-container h1 {
   color: #dddddd;
@@ -511,6 +506,64 @@ main {
   font-size: 18px;
 }
 
+#section-5 {
+	max-width: 1080px;
+  margin: auto;
+}
+.slide {
+  padding: 3em 0;
+}
+.image-slider-container {
+  margin: auto;
+}
+.image-slider-container img {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.slide blockquote {
+	margin: 10px 10px 0;
+	background: #fff;
+	padding: 60px 30px;
+	position: relative;
+	border: none;
+	border-radius: 8px;
+	font-size: 1.25em;
+}
+.slide blockquote:before {
+  font-family: "Impact", sans-serif;
+	content: "\201C";
+	position: absolute;
+	font-size: 80px;
+	padding: 10px;
+	line-height: 1;
+}
+.slide blockquote:before {
+	top: 0;
+	left: 10px;
+}
+/*.bubble div {
+	width: 0;
+	height: 0;
+	border-left: 0 solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #fff;
+	margin: 0 0 0 60px;
+	margin-bottom: 10px;
+}*/
+.slide cite {
+  display: grid;
+  place-items: center;
+	font-size: 1.25em;
+  color:#222222;
+}
+
+
+
+
+
+
 @media only screen and (min-width: 640px){
 
   .section-1-left-content h1 {
@@ -524,10 +577,7 @@ main {
 
 @media only screen and (min-width: 850px){
 
-  .content-container-width-1080 {
-    display: flex;
-    justify-content: space-between;
-  }
+
   .left-info-section-1 {
     justify-content: flex-start;
   }
