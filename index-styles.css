@@ -15,7 +15,7 @@ html {
 h1, h2, h3, h4 {
   font-family: 'Anton', sans-serif;
   font-family: 'impact', sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 h1 {
   font-size: 4rem;
@@ -148,12 +148,18 @@ main {
 }
 .content-container-width-1080 {
   max-width: 1080px;
-  padding: 3em 2em;
+  padding: 5em 2em;
   margin: auto;
   justify-content: center;
 }
 
 /***** section 1 left content *****/
+.section-1-left-content {
+  padding: 3em 2em 0 2em;
+}
+.section-1-right-content {
+  padding: 4em 2em 0 2em;
+}
 .headline-container h1 {
   color: #dddddd;
   font-size: 3.5rem;
@@ -214,7 +220,7 @@ main {
   border: 1px solid #dddddd;
 }
 
-/***** section 1 right content *****/
+          /***** section 1 right content *****/
 .section-1-right-content {
   padding-top: 3em;
   padding-bottom: 3em;
@@ -268,7 +274,7 @@ main {
   color: #404d59;
 }
 
-/***** section 1 right content buttons *****/
+          /***** section 1 right content buttons *****/
 .learn-more-button {
   display: inline-flex;
   padding: 2em 0 1em 0;
@@ -294,7 +300,7 @@ main {
   border: 1px solid #dddddd;
 }
 
-          /***** SECTION 2 *****/
+          /***** SECTION 2 ABOUT SPERLING*****/
 #section-2 {
   background: 50% 50% / cover;
   background-image: url('pictures/section-2-bg.jpg');
@@ -317,7 +323,7 @@ main {
 }
 .view-more-button {
   display: inline-flex;
-  padding: 2em 0 1em 0;
+  padding-top: 3em;
   text-align: center;
   margin: auto;
   width: -webkit-fill-available;
@@ -342,7 +348,7 @@ main {
 
 /**** section 2 right content ******/
 .section-2-right-content {
-  padding: 3em 0;
+  padding-top: 4em;
 }
 .section-2-picture-grid {
   display: grid;
@@ -365,13 +371,11 @@ main {
   transition: 1s;
 }
 
+          /***** SECTION 3 SPECIALIZATIONS *****/
 #section-3 {
   background: 50% 50% / cover;
   background: #dddddd;
   /*background-image: url('pictures/section-3-bg.jpg');*/
-}
-.what-we-do-container {
-
 }
 .what-we-do-container h1 {
   color: #404d59;
@@ -390,66 +394,69 @@ main {
 
 /* section 3 left content */
 .section-3-left-content {
-  padding-top: 6em;
+  padding: 4em .5em 0 .5em;
   display: grid;
-  grid-row-gap: 6.5em;
+  grid-template-columns: 167px 167px;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: .5em;
   margin: auto;
-}
-.section-3-button {
-  padding: 5em 0 3em 0;
+  width: -webkit-fill-available;
+  justify-content: center;
 }
 .specialization {
   width: -webkit-fill-available;
   text-align: center;
-  transform: rotate(45deg);
   transition: 1s;
   margin: auto;
 }
 .specialization p, .specialization i {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 .color-container {
   background: #02ccb1;
   opacity: .9;
-  min-height: 209px;
-  min-width: 209px;
+  min-height: 167px;
+  min-width: 167px;
   display: grid;
   place-items: center;
   margin: auto;
 }
 .recenter-text {
-  transform: rotate(-45deg);
   transition: 1s;
 }
 .branding-specialization {
   background: 50% 50% / cover;
   background-image: url('pictures/branding.jpg');
-  width: 209px;
+  width: 160px;
 }
 .photography-specialization {
   background: 50% 50% / cover;
   background-image: url('pictures/photography.jpeg');
-  width: 209px;
+  width: 160px;
 }
 .printing-specialization {
   background: 50% 50% / cover;
   background-image: url('pictures/print.jpg');
-  width: 209px;
+  width: 160px;
 }
 .seo-specialization {
   background: 50% 50% / cover;
   background-image: url('pictures/seo.jpeg');
-  width: 209px;
+  width: 160px;
 }
 .social-networking-specialization {
   background: 50% 50% / cover;
   background-image: url('pictures/social.jpeg');
-  width: 209px;
+  width: 160px;
 }
 .web-specialization {
   background: 50% 50% / cover;
   background-image: url('pictures/web.jpeg');
-  width: 209px;
+    width: 160px;
+}
+.specialization {
+  width: 167px;
+  height: 167px;
 }
 
           /***** SECTION 4 *****/
