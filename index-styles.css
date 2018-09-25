@@ -12,7 +12,7 @@
 html {
   font-size: 16px;
 }
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Anton', sans-serif;
   font-family: 'impact', sans-serif;
   letter-spacing: 2px;
@@ -21,13 +21,19 @@ h1 {
   font-size: 4rem;
 }
 h2 {
-  font-size: 3.5rem'
+  font-size: 3.5rem;
 }
 h3 {
   font-size: 3rem;
 }
 h4 {
   font-size: 2.4rem;
+}
+h5 {
+  font-size: 1.6em;
+}
+h6 {
+  font-size: 1.1em;
 }
 p {
   line-height: 1.4em;
@@ -513,6 +519,7 @@ main {
   font-size: 18px;
 }
 
+          /***** SECTION 5 REVIEWS *****/
 #section-5 {
   margin: auto;
   background: #02ccb1;
@@ -564,7 +571,7 @@ main {
   color: #404d59;
 }
 
-          /***** SECTION 6 *****/
+          /***** SECTION 6 SITE RECAP *****/
 
 #section-6 {
   background: 50% 50% / cover;
@@ -625,6 +632,41 @@ input, textarea {
 .media-container i {
   color: #404d59;
   font-size: 2em;
+}
+
+.section-6-center-content {
+  padding: 4em 2em;
+}
+.list-two {
+  padding-top: 2em;
+}
+.section-6-center-content ul li {
+  list-style: none;
+}
+.section-6-center-content ul li a {
+  color: #777777;
+  text-decoration: none;
+}
+.list-header {
+  color: white;
+  font-weight: 600;
+}
+
+.section-6-left-content {
+  padding: 0 2em 4em 2em;
+}
+.blogs-container h4 {
+  color: white;
+}
+.blogs {
+  padding: .5em 0;
+}
+.blogs h6 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.blogs a {
+  color: #777777;
 }
 
 @media only screen and (min-width: 640px){
