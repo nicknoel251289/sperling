@@ -1,5 +1,5 @@
 $("document").ready(function(){
-  $('.quotes').slick({
+  $('.slide-container').slick({
       dots: false,
       infinite: true,
       autoplay: true,
