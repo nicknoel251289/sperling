@@ -485,7 +485,7 @@ main {
 }
 .project-container {
   display: grid;
-  grid-row-gap: 2em;
+  grid-gap: 1em;
   padding-top: 3em;
 }
 .project {
@@ -752,6 +752,15 @@ footer {
   .section-3-left-content {
     max-width: 450px;
     margin: 0 auto;
+    grid-template-columns: 207px 207px;
+  }
+  .specialization {
+    width: 207px;
+    height: 207px;
+  }
+  .color-container {
+    height: 207px;
+    width: 207px;
   }
   .section-3-right-content {
     max-width: 450px;
@@ -762,6 +771,9 @@ footer {
   .section-4-content-container {
     max-width: 450px;
     margin: 0 auto;
+  }
+  .project-container {
+    grid-template-columns: 1fr 1fr;
   }
 
   /* section 5 */
