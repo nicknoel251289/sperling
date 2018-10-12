@@ -162,9 +162,15 @@ main {
 /***** section 1 left content *****/
 .section-1-left-content {
   padding: 3em 2em 0 2em;
+  max-width: 500px;
+  margin: 0 auto;
 }
 .section-1-right-content {
   padding: 4em 2em 0 2em;
+  max-width: 500px;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
 }
 .headline-container h1 {
   color: #dddddd;
@@ -236,7 +242,7 @@ main {
   padding-bottom: 3em;
 }
 .workshop-container {
-  max-width: 450px;
+  max-width: 500px;
   background: #ffffff;
   min-height: 380px;
   border-radius: 6px;
@@ -314,6 +320,10 @@ main {
 #section-2 {
   background: 50% 50% / cover;
   background-image: url('pictures/section-2-bg.jpg');
+}
+.section-2-right-content, .section-2-left-content {
+  max-width: 500px;
+  margin: 0 auto;
 }
 .sperling-info-container {
   max-width: 550px;
@@ -405,6 +415,10 @@ main {
 }
 
 /* section 3 left content */
+.section-3-right-content {
+  max-width: 500px;
+  margin: 0 auto;
+}
 .section-3-left-content {
   padding: 4em .5em 0 .5em;
   display: grid;
@@ -414,6 +428,8 @@ main {
   margin: auto;
   width: -webkit-fill-available;
   justify-content: center;
+  max-width: 500px;
+  margin: 0 auto;
 }
 .specialization {
   width: -webkit-fill-available;
@@ -480,6 +496,10 @@ main {
   background: 50% 50% / cover;
   background-image: url('pictures/section-2-bg.jpg');
 }
+.section-4-content-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
 .section-4-content-container h1 {
   color: #dddddd;
 }
@@ -537,6 +557,10 @@ main {
   margin: auto;
   background: #02ccb1;
 }
+.slide-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
 .image-slider-container {
   margin: auto;
 }
@@ -591,7 +615,8 @@ main {
   background-image: url('pictures/section-2-bg.jpg');
 }
 .section-6-right-content {
-  padding-top: 3em;
+  max-width: 500px;
+  margin: 0 auto;
 }
 .connect-container {
   max-width: 550px;
@@ -652,6 +677,8 @@ input, textarea {
 
 .section-6-center-content {
   padding: 2em 2em;
+  max-width: 500px;
+  margin: 0 auto;
 }
 .list-two {
   padding-top: 2em;
@@ -671,6 +698,8 @@ input, textarea {
 
 .section-6-left-content {
   padding: 0em 2em 2em 2em;
+  max-width: 500px;
+  margin: 0 auto;
 }
 .blogs-container h4 {
   color: white;
@@ -717,20 +746,16 @@ footer {
     text-align: center;
   }
 
+  /* header */
+  .container {
+    max-width: 500px;
+  }
+
   /* section 1 */
   #section-1 h1 {
     text-align: left;
   }
-  .section-1-left-content {
-    max-width: 450px;
-    margin: auto;
-  }
-  .section-1-right-content {
-    max-width: 450px;
-    margin: auto;
-    display: grid;
-    place-items: center;
-  }
+
   .section-1-left-content h1 {
     grid-column: 2/3;
     color: #dddddd;
@@ -739,56 +764,36 @@ footer {
   }
 
   /* section 2 */
-  .section-2-left-content {
-    max-width: 450px;
-    margin: 0 auto;
-  }
-  .section-2-right-content {
-    max-width: 450px;
-    margin: 0 auto;
+  .section-2-picture-grid {
+    grid-template-columns: 1fr 1fr;
   }
 
   /* section 3 */
   .section-3-left-content {
-    max-width: 450px;
-    margin: 0 auto;
-    grid-template-columns: 207px 207px;
+    grid-template-columns: 230px 230px;
+    grid-row-gap: 1em;
   }
   .specialization {
-    width: 207px;
-    height: 207px;
+    width: 220px;
+    height: 220px;
   }
   .color-container {
-    height: 207px;
-    width: 207px;
-  }
-  .section-3-right-content {
-    max-width: 450px;
-    margin: 0 auto;
+    height: 220px;
+    width: 220px;
   }
 
   /* section 4 */
-  .section-4-content-container {
-    max-width: 450px;
-    margin: 0 auto;
-  }
   .project-container {
     grid-template-columns: 1fr 1fr;
   }
 
-  /* section 5 */
-  .slide-container {
-    max-width: 450px;
-    margin: 0 auto;
+  /* section 6 */
+  .section-6-right-content {
+    padding-top: 3em;
   }
 
-  /* section 6 */
-  .section-6-right-content, .section-6-center-content, .section-6-left-content {
-    max-width: 450px;
-    margin: 0 auto;
-  }
   .google-maps iframe {
-    width: 450px;
+    width: 500px;
   }
 
 }
@@ -807,6 +812,7 @@ footer {
 
 /* FOR NAVIGATION BAR */
 @media only screen and (min-width: 1115px){
+
   main {
     position: relative;
     top: 75.59px;
@@ -848,6 +854,23 @@ footer {
     text-decoration: none;
     color: #404d59;
     padding: 1.8em 1.5em;
+  }
+
+  /* header */
+  .container {
+    max-width: 1080px;
+  }
+
+  /* section 1 */
+  .section-1-container {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .section-1-left-content {
+  }
+  .workshop-container {
+    width: 350px;
   }
 
 }
