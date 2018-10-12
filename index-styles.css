@@ -19,6 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
   font-size: 4rem;
+  padding-bottom: .5em;
 }
 h2 {
   font-size: 3.5rem;
@@ -176,6 +177,7 @@ main {
   color: #dddddd;
   font-size: 3.5rem;
   line-height: 3.5rem;
+  padding: 0;
 }
 .headline-container p {
   color: #dddddd;
@@ -869,10 +871,14 @@ footer {
   /* section 1 */
   .section-1-container {
     max-width: 1080px;
+    height: 800px;
     margin: 0 auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
   }
   .section-1-left-content {
+    padding: 0;
   }
   .workshop-container {
     width: 350px;
@@ -902,9 +908,6 @@ footer {
   }
   .sperling-info-container {
     display: grid;
-  }
-  .sperling-info-container h1 {
-    padding-bottom: .5em;
   }
   .sperling-info-container h1, .sperling-info-container p {
     color: #333338;
@@ -936,6 +939,29 @@ footer {
   }
   .desktop-button a {
     margin: 0;
+  }
+
+  /* section 3 */
+  .section-3-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .section-3-left-content {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: grid;
+    place-items: center;
+  }
+  .section-3-right-content {
+    grid-column: 2/3;
+    display: grid;
+    place-items: center;
+  }
+  .section-3-desktop-button {
+    display: flex;
+  }
+  .what-we-do-container {
+    max-width: 500px;
   }
 
 }
