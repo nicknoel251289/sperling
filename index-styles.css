@@ -309,6 +309,8 @@ main {
   text-align: center;
   font-weight: 400;
   margin: auto;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 .learn-more-button a:hover {
   background: #dddddd;
@@ -391,6 +393,9 @@ main {
 .reveal {
   opacity: 0;
   transition: 1s;
+}
+.desktop-button {
+  display: none;
 }
 
           /***** SECTION 3 SPECIALIZATIONS *****/
@@ -871,6 +876,66 @@ footer {
   }
   .workshop-container {
     width: 350px;
+  }
+
+  /* section 2 */
+  .section-2-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1080px;
+    height: 800px;
+    position: relative;
+  }
+  .section-2-left-content {
+    grid-column: 1/2;
+    box-sizing: border-box;
+    padding: 50px;
+    background: #dddddd;
+    position: absolute;
+    width: 500px;
+    height: 1040px;
+    top: -120px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    display: grid;
+    place-items: center;
+  }
+  .sperling-info-container {
+    display: grid;
+  }
+  .sperling-info-container h1 {
+    padding-bottom: .5em;
+  }
+  .sperling-info-container h1, .sperling-info-container p {
+    color: #333338;
+    text-align: left;
+  }
+  .section-2-right-content {
+    grid-column: 2/3;
+    height: 700px;
+    display: grid;
+    place-items: center;
+  }
+  .pic-border {
+    background: #333338;
+    padding: 20px;
+  }
+  .pic-adjust-down {
+    position: relative;
+    top: 20px;
+  }
+  .pic-adjust-up {
+    position: relative;
+    top: 0px;
+  }
+  .mobile-button {
+    display: none;
+  }
+  .desktop-button {
+    display: flex;
+  }
+  .desktop-button a {
+    margin: 0;
   }
 
 }
